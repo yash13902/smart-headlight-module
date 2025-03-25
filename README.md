@@ -1,4 +1,4 @@
-# smart-headlight-module
+# Smart Headlight Module
 # Summary - 
 As the prevalence of night-time driving continues to rise, ensuring driver safety has become
 a critical concern. This research project delves into the escalating issue of intense low beam
