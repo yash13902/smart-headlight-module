@@ -68,9 +68,57 @@ This figure explains the architecture of the proposed headlight system. There ar
 - The LDR detects ambient light conditions and adjusts the headlights accordingly. If the light falls below a certain threshold, the headlights are automatically turned on; otherwise, they remain off.
 - This setup ensures that headlights are utilized appropriately based on surrounding lighting conditions, enhancing safety for both the driver and other road users.
 
+## Design of the Module - 
 
+<img width="465" alt="Screenshot 2025-03-26 at 9 05 04 AM" src="https://github.com/user-attachments/assets/a6ff8ca1-be08-4b66-bc3d-cd9a60b4708a" /> <br> <br>
 
+<img width="464" alt="Screenshot 2025-03-26 at 9 05 33 AM" src="https://github.com/user-attachments/assets/89b916fd-ae2a-4a35-b1fc-32963995ad96" />
 
+## Real Life Working - 
 
+<img width="420" alt="Screenshot 2025-03-26 at 9 07 20 AM" src="https://github.com/user-attachments/assets/f7b70491-1826-4ca0-acbc-b549c7eb771a" />
+
+## Performance of the ML Model - 
+
+The machine learning model used is YOLOv8. It is an object detection model and it is known for speed and accuracy.
+- The precision for the trained model is – 76.4%
+- The recall for the trained model is – 86.6%
+
+<img width="466" alt="Screenshot 2025-03-26 at 9 09 13 AM" src="https://github.com/user-attachments/assets/207c9bc3-2e9c-4f7f-b613-5cbf71654eb8" /> <br>
+
+<img width="310" height="210" alt="Screenshot 2025-03-26 at 9 09 34 AM" src="https://github.com/user-attachments/assets/ef18f4a3-05ef-4360-8e51-74365b12a064" />
+<img width="310" height="210" alt="Screenshot 2025-03-26 at 9 09 49 AM" src="https://github.com/user-attachments/assets/473aa968-7315-43d8-9e38-3add44bd98db" />
+
+# How to Run - 
+
+### Software - 
+- Python Environment is given
+- Run the requirements.txt file to import all the required packages.
+- Connect with the hardware Module and a Camera Module, you can use your laptop camera also.
+- Run the videotrial.py file. You can use this to run the headlight module in live video form or even a pre-recorded video.
+- Run the trial.py file. This can be used to run the headlight module for images.
+
+### Hardware - 
+
+Components –
+1. Arduino Uno R3
+2. LED Matrix Max7219
+3. Light Dependent Resistor
+4. Breadboard
+
+Light Dependent Resistor –
+- The VCC pin is connected to the breadboard where 5V of power is being supplied from
+the Arduino.
+- The ground pin is connected to the ground pin of the Arduino.
+- The A0 pin which is the output of the LDR is connected to the A0 pin of the Arduino. The output of the LDR is given from the A0 pin of the LDR and it is given as input to the A0 pin of the Arduino.
+
+LED Matrix –
+- The VCC pin is connected to the breadboard where 5V of power is being supplied from the Arduino.
+- The ground pin is connected to the ground pin of the Arduino.
+- The Chip Select pin is connected to pin 10 of the Arduino.
+- The Clock pin is connected to pin 11 of the Arduino.
+- The Data In pin is connected to pin 12 of the Arduino.
+
+PS. - Don't forget to connect the Arduino to your laptop before running the program.
 
 
